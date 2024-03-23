@@ -1,0 +1,242 @@
+[
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/infantry/chassis.c.obj -c F:/META/NewGim/infantry/chassis.c",
+  "file": "F:/META/NewGim/infantry/chassis.c",
+  "output": "CMakeFiles/NewGim.elf.dir/infantry/chassis.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/infantry/gimbal.c.obj -c F:/META/NewGim/infantry/gimbal.c",
+  "file": "F:/META/NewGim/infantry/gimbal.c",
+  "output": "CMakeFiles/NewGim.elf.dir/infantry/gimbal.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/infantry/imu.c.obj -c F:/META/NewGim/infantry/imu.c",
+  "file": "F:/META/NewGim/infantry/imu.c",
+  "output": "CMakeFiles/NewGim.elf.dir/infantry/imu.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/infantry/motors.c.obj -c F:/META/NewGim/infantry/motors.c",
+  "file": "F:/META/NewGim/infantry/motors.c",
+  "output": "CMakeFiles/NewGim.elf.dir/infantry/motors.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/infantry/pid.c.obj -c F:/META/NewGim/infantry/pid.c",
+  "file": "F:/META/NewGim/infantry/pid.c",
+  "output": "CMakeFiles/NewGim.elf.dir/infantry/pid.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/infantry/rc.c.obj -c F:/META/NewGim/infantry/rc.c",
+  "file": "F:/META/NewGim/infantry/rc.c",
+  "output": "CMakeFiles/NewGim.elf.dir/infantry/rc.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/infantry/referee.c.obj -c F:/META/NewGim/infantry/referee.c",
+  "file": "F:/META/NewGim/infantry/referee.c",
+  "output": "CMakeFiles/NewGim.elf.dir/infantry/referee.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Core/Src/can.c.obj -c F:/META/NewGim/Core/Src/can.c",
+  "file": "F:/META/NewGim/Core/Src/can.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Core/Src/can.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Core/Src/dma.c.obj -c F:/META/NewGim/Core/Src/dma.c",
+  "file": "F:/META/NewGim/Core/Src/dma.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Core/Src/dma.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Core/Src/gpio.c.obj -c F:/META/NewGim/Core/Src/gpio.c",
+  "file": "F:/META/NewGim/Core/Src/gpio.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Core/Src/gpio.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Core/Src/iwdg.c.obj -c F:/META/NewGim/Core/Src/iwdg.c",
+  "file": "F:/META/NewGim/Core/Src/iwdg.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Core/Src/iwdg.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Core/Src/main.c.obj -c F:/META/NewGim/Core/Src/main.c",
+  "file": "F:/META/NewGim/Core/Src/main.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Core/Src/main.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Core/Src/spi.c.obj -c F:/META/NewGim/Core/Src/spi.c",
+  "file": "F:/META/NewGim/Core/Src/spi.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Core/Src/spi.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj -c F:/META/NewGim/Core/Src/stm32f4xx_hal_msp.c",
+  "file": "F:/META/NewGim/Core/Src/stm32f4xx_hal_msp.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Core/Src/stm32f4xx_it.c.obj -c F:/META/NewGim/Core/Src/stm32f4xx_it.c",
+  "file": "F:/META/NewGim/Core/Src/stm32f4xx_it.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Core/Src/stm32f4xx_it.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Core/Src/syscalls.c.obj -c F:/META/NewGim/Core/Src/syscalls.c",
+  "file": "F:/META/NewGim/Core/Src/syscalls.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Core/Src/syscalls.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Core/Src/sysmem.c.obj -c F:/META/NewGim/Core/Src/sysmem.c",
+  "file": "F:/META/NewGim/Core/Src/sysmem.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Core/Src/sysmem.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Core/Src/system_stm32f4xx.c.obj -c F:/META/NewGim/Core/Src/system_stm32f4xx.c",
+  "file": "F:/META/NewGim/Core/Src/system_stm32f4xx.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Core/Src/system_stm32f4xx.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Core/Src/tim.c.obj -c F:/META/NewGim/Core/Src/tim.c",
+  "file": "F:/META/NewGim/Core/Src/tim.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Core/Src/tim.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Core/Src/usart.c.obj -c F:/META/NewGim/Core/Src/usart.c",
+  "file": "F:/META/NewGim/Core/Src/usart.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Core/Src/usart.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -x assembler-with-cpp -Og -g -o CMakeFiles/NewGim.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj -c F:/META/NewGim/Core/Startup/startup_stm32f407ighx.s",
+  "file": "F:/META/NewGim/Core/Startup/startup_stm32f407ighx.s",
+  "output": "CMakeFiles/NewGim.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj"
+},
+{
+  "directory": "F:/META/NewGim/build",
+  "command": "F:/GCC_ARM_NONE_EABI/version_10_3_1/bin/arm-none-eabi-gcc.exe -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -IF:/META/NewGim/Core/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc -IF:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IF:/META/NewGim/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IF:/META/NewGim/Drivers/CMSIS/Include -IF:/META/NewGim/if -I\"F:/META/NewGim/(\" -IF:/META/NewGim/ENABLE_HARD_FP -I\"F:/META/NewGim/)\" -IF:/META/NewGim/USE_NEW_VERSION_DSP -IF:/META/NewGim/NewGim/Include/dsp -IF:/META/NewGim/NewGim/Include -IF:/META/NewGim/NewGim/PrivateInclude -IF:/META/NewGim/else -IF:/META/NewGim/endif -IF:/META/NewGim/./infantry -g -std=gnu11 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj -c F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c",
+  "file": "F:/META/NewGim/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c",
+  "output": "CMakeFiles/NewGim.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
+}
+]

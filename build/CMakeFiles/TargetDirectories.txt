@@ -1,0 +1,3 @@
+F:/META/NewGim/build/CMakeFiles/NewGim.elf.dir
+F:/META/NewGim/build/CMakeFiles/edit_cache.dir
+F:/META/NewGim/build/CMakeFiles/rebuild_cache.dir
