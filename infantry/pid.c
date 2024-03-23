@@ -3,7 +3,7 @@
 
 //'\0'表示不使用
 PID_T chasM = {45.0f , 0.2f , '\0'}; //底盘电机
-PID_T chasZ = {6.0f, '\0' ,40.114514f}; //底盘旋转
+PID_T chasZ = {8.0f, '\0' ,40.114514f}; //底盘旋转
 
 PID_T yawA = {30.114514f , '\0' , 10}; //yaw轴角度
 PID_T yawV = {781.14514f , 10 , '\0'}; //yaw轴速度
@@ -48,8 +48,8 @@ float Chas_Calc_Z(float relative_angle)
     oldError = pError;
     //算加和
     outLevel = pError*chasZ.kp + dError*chasZ.kd;
-    if(outLevel> 3){outLevel= 3;}
-    if(outLevel<-3){outLevel=-3;}
+    if(outLevel> 4){outLevel= 4;}
+    if(outLevel<-4){outLevel=-4;}
     //返回结果
     //if(-0.01<outLevel && outLevel<0.01){outLevel=0;}
     return outLevel;
