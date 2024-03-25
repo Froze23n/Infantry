@@ -38,6 +38,8 @@ void Chassis_Yaw6020_CMD(void)
     } 
     else if(SW_MID==rc.sw1) //遥控器控制
     {
+        if(RC_YAW-imu.Yaw_Angle>+PI){RC_YAW-=2*PI;}
+        if(RC_YAW-imu.Yaw_Angle<-PI){RC_YAW+=2*PI;}
         angleDiff = RC_YAW - imu.Yaw_Angle;
         if(-PI/2<angleDiff && angleDiff<PI/2)
         {
