@@ -9,7 +9,7 @@
 
 const float pitch_negative_LIM = -600*PI/4096;
 const float pitch_positive_LIM = 600*PI/4096;
-const float rc_y_sensitivity = 1/900.0f;
+const float rc_y_sensitivity = 1/400.0f;
 const float mouse_l_sensitivity = 400;
 const float mouse_y_sensitivity = 1/6000.0f;
 
@@ -44,7 +44,7 @@ void Gimbal_Task(void)
         //是否开启摩擦轮？
         if(rcLoadV){shootON=1;}
         //tx
-        Gimbal_CAN_Tx(voltage*0 ,current , shootON*(-6500) , shootON*(+6500) );
+        Gimbal_CAN_Tx(voltage ,current , shootON*(-6500) , shootON*(+6500) );
     }
     else if(SW_DOWN == rc.sw1) //键鼠控制
     {

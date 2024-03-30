@@ -114,20 +114,21 @@ int main(void)
   MX_SPI1_Init();
   MX_CAN1_Init();
   MX_CAN2_Init();
-  MX_IWDG_Init();
+  //MX_IWDG_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  Start_Referee_Rx();
-  MCU_Beep_Up(); Dbus_Init(); HAL_Delay(1000);
-  BMI088_Init(); Enable_Motors();
+  //Start_Referee_Rx();
+  MCU_Beep_Up(); //Dbus_Init(); HAL_Delay(1000);
+  //BMI088_Init();
+  Enable_Motors();
   while (1)
   {
     HAL_Delay(500);
-    HAL_GPIO_TogglePin(Green_GPIO_Port,Green_Pin);
+    //HAL_GPIO_TogglePin(Green_GPIO_Port,Green_Pin);
     HAL_GPIO_WritePin(Laser_GPIO_Port,Laser_Pin,GPIO_PIN_SET);
     /* USER CODE END WHILE */
 

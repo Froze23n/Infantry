@@ -14,6 +14,13 @@ struct MotorData_T {
 	float Velocity;  //角速度，rad/s
 } ;
 
+struct CapData_T {
+	float Vin;
+	float Vc;
+	float Iin;
+	float Pset;
+} ;
+
 /*-----------------------externs-----------------------*/
 //can1数据：pitch电机&拨弹盘
 extern struct MotorData_T Pitch6020;//角度&速度
@@ -22,7 +29,7 @@ extern float Shooter_Velocity[2];
 //can2数据：yaw电机&麦轮
 extern float Chassis_M3508_Velocity[4];//rad/s
 extern float GIM_CHAS_Angle;//经过特殊处理，为(-pi,pi]
-
+extern struct CapData_T Capacitor;
 
 /*函数声名*/
 void Enable_Motors(void);

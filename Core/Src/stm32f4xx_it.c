@@ -26,6 +26,9 @@
 #include "imu.h"
 #include "chassis.h"
 #include "gimbal.h"
+
+#include "motors.h"
+uint16_t powerSET = 70;
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -245,7 +248,7 @@ void CAN1_RX0_IRQHandler(void)
 void TIM2_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM2_IRQn 0 */
-  Gimbal_Task();///////////////////////////////////////////////////////////////////////////////////////////////////////////////////云台
+  //Gimbal_Task();///////////////////////////////////////////////////////////////////////////////////////////////////////////////////云台
   /* USER CODE END TIM2_IRQn 0 */
   HAL_TIM_IRQHandler(&htim2);
   /* USER CODE BEGIN TIM2_IRQn 1 */
@@ -259,7 +262,7 @@ void TIM2_IRQHandler(void)
 void TIM3_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM3_IRQn 0 */
-  Chassis_Yaw6020_CMD(); Chassis_M3508_CMD();////////////////////////////////////////////////////////////////////////////////底盘
+  //Chassis_Yaw6020_CMD(); Chassis_M3508_CMD();////////////////////////////////////////////////////////////////////////////////底盘
   /* USER CODE END TIM3_IRQn 0 */
   HAL_TIM_IRQHandler(&htim3);
   /* USER CODE BEGIN TIM3_IRQn 1 */
@@ -273,7 +276,7 @@ void TIM3_IRQHandler(void)
 void USART3_IRQHandler(void)
 {
   /* USER CODE BEGIN USART3_IRQn 0 */
-  Dbus_UART_IRQHandler();///////////////////////////////////////////////////////////////////////////////////////////////////////////////////遥控�??
+  //Dbus_UART_IRQHandler();///////////////////////////////////////////////////////////////////////////////////////////////////////////////////遥控�??
   /* USER CODE END USART3_IRQn 0 */
   HAL_UART_IRQHandler(&huart3);
   /* USER CODE BEGIN USART3_IRQn 1 */
@@ -287,7 +290,7 @@ void USART3_IRQHandler(void)
 void TIM5_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM5_IRQn 0 */
-  Get_IMU_Yaw();/////////////////////////////////////////////////////////////////////////////////////////////////////////////////// IMU
+  //Get_IMU_Yaw();/////////////////////////////////////////////////////////////////////////////////////////////////////////////////// IMU
   /* USER CODE END TIM5_IRQn 0 */
   HAL_TIM_IRQHandler(&htim5);
   /* USER CODE BEGIN TIM5_IRQn 1 */
@@ -301,7 +304,7 @@ void TIM5_IRQHandler(void)
 void TIM7_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM7_IRQn 0 */
-  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////超电控制板更�??
+  Chassis_Capacitor_Tx(powerSET);///////////////////////////////////////////////////////////////////////////////////////////////////////////////////超电控制板更�??
   /* USER CODE END TIM7_IRQn 0 */
   HAL_TIM_IRQHandler(&htim7);
   /* USER CODE BEGIN TIM7_IRQn 1 */
@@ -343,7 +346,7 @@ void CAN2_RX1_IRQHandler(void)
 void USART6_IRQHandler(void)
 {
   /* USER CODE BEGIN USART6_IRQn 0 */
-  //////////////////////////裁判解算(并没�??)
+  //////////////////////////裁判解算(并没�??)
   /* USER CODE END USART6_IRQn 0 */
   HAL_UART_IRQHandler(&huart6);
   /* USER CODE BEGIN USART6_IRQn 1 */

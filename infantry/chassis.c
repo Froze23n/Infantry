@@ -183,3 +183,6 @@ float xHandler(float d, float a)
     if(x<-1){x=-1;}
     return x;
 }
+
+
+//////////电容控制

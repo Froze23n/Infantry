@@ -34,7 +34,7 @@ float Shooter_Velocity[2] = {0,0};
 //can2数据：yaw电机&麦轮
 float Chassis_M3508_Velocity[4] = {0,0,0,0};
 float GIM_CHAS_Angle = 0.0f;//(-pi,pi]
-//uint16_t CAP_Setting = 35; //Todo
+struct CapData_T Capacitor = {0,0,0,0};
 
 /* ------------------------------ 初始化（配置过滤器）------------------------------ */
 void Enable_Motors(void)
@@ -138,6 +138,7 @@ void Chassis_GM6020_Tx(int16_t Yaw_Voltage)
 
 void Chassis_Capacitor_Tx(uint16_t Power_Set)
 {
+	Power_Set = Power_Set*100; //设定就是这样,步进0.01
 	uint8_t TxData[2];
 	TxData[0] = (uint8_t)(Power_Set>>8);
 	TxData[1] = (uint8_t)Power_Set;
@@ -215,7 +216,12 @@ void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef* hcan)
 				int16_t tempVelocity = ( (RxData[2]<<8) | RxData[3] );
 				Chassis_M3508_Velocity[i] = (float)tempVelocity * _rads_per_rpm_ ;
 			}else if(RxHeader.StdId == 0x211){
-				//todo 电容
+				uint16_t* captr = (uint16_t*)RxData;
+				Capacitor.Vin = (float)captr[0]/100.0f;
+				Capacitor.Vc = (float)captr[1]/100.0f;
+				Capacitor.Iin = (float)captr[2]/100.0f;
+				Capacitor.Pset = (float)captr[3]/100.0f;
+				HAL_GPIO_TogglePin(Blue_GPIO_Port,Blue_Pin);
 			}else{
 				HAL_GPIO_WritePin(Red_GPIO_Port,Red_Pin,GPIO_PIN_SET);
 			}
