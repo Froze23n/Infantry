@@ -30,14 +30,37 @@
 /* USER CODE BEGIN Includes */
 #include "rc.h"
 #include "imu.h"
+
 #include "motors.h"
 #include "referee.h"
+
+// 自定义函数 //
+void MCU_Beep_Up(void);
+void Laser_OFF(void);
+void Laser_ON(void);
+void Blink(void);
+
 void MCU_Beep_Up(void)
 {
   HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_3);
   __HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_3,500);
   HAL_Delay(100);
   __HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_3,0);
+}
+
+void Laser_OFF(void)
+{
+  HAL_GPIO_WritePin(Laser_GPIO_Port,Laser_Pin,GPIO_PIN_RESET);
+}
+
+void Laser_ON(void)
+{
+  HAL_GPIO_WritePin(Laser_GPIO_Port,Laser_Pin,GPIO_PIN_SET);
+}
+
+void Blink(void)
+{
+  HAL_GPIO_TogglePin(Green_GPIO_Port,Green_Pin);
 }
 
 /* USER CODE END Includes */
@@ -114,22 +137,26 @@ int main(void)
   MX_SPI1_Init();
   MX_CAN1_Init();
   MX_CAN2_Init();
-  //MX_IWDG_Init();
+  MX_IWDG_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  //Start_Referee_Rx();
-  MCU_Beep_Up(); //Dbus_Init(); HAL_Delay(1000);
-  //BMI088_Init();
-  Enable_Motors();
+  Start_Referee_Rx();
+  MCU_Beep_Up(); Laser_OFF();
+  Dbus_Init(); HAL_Delay(1000);
+  BMI088_Init(); Enable_Motors();
   while (1)
   {
-    HAL_Delay(500);
-    //HAL_GPIO_TogglePin(Green_GPIO_Port,Green_Pin);
-    HAL_GPIO_WritePin(Laser_GPIO_Port,Laser_Pin,GPIO_PIN_SET);
+    HAL_Delay(20);
+    if(0x01==rc.sw1 || 0==rc.sw1){
+      Laser_OFF();
+    }else{
+      Laser_ON();
+    }
+    Blink();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

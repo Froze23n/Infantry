@@ -2,23 +2,27 @@
 
 #include "rc.h"
 #include "imu.h"
+
 #include "motors.h"
 #include "pid.h"
+#include "referee.h"
 
 #include <math.h>
 #define PI (3.1415927F)
 
 float yHandler(float w, float s);
 float xHandler(float d, float a);
+float Calc_Mouse_Yaw(int16_t x);
 
 static float Rotate_Z=0;
 //遥控数据
 extern RC_Type rc;
 //常量：减速比等等
 const float Reduction_Ratio = 19.0f;
-const float rx_sensitivity = -PI/1000.0f;
-const float mouse_x_sensitivity = -PI/8000.0f;
+const float rc_x_sensitivity = -PI/500.0f;
+const float mouse_x_sensitivity = -PI/19198.10f;
 //等级数据：未来将会作出详细规划
+uint16_t Power_Limit = 45;
 float chassis_speed_level = Reduction_Ratio*10;
 float chassis_rotate_level = Reduction_Ratio*5;
 /*手册
@@ -43,7 +47,7 @@ void Chassis_Yaw6020_CMD(void)
         angleDiff = RC_YAW - imu.Yaw_Angle;
         if(-PI/2<angleDiff && angleDiff<PI/2)
         {
-            RC_YAW += rx_sensitivity * rc.RX;
+            RC_YAW += rc_x_sensitivity * rc.RX;
         }
     }
     else if(SW_DOWN==rc.sw1) //键鼠控制
@@ -51,10 +55,10 @@ void Chassis_Yaw6020_CMD(void)
         angleDiff = RC_YAW - imu.Yaw_Angle;
         if(-PI/2<angleDiff && angleDiff<PI/2)
         {
-            RC_YAW += mouse_x_sensitivity * rc.mouse.x;
+            RC_YAW += mouse_x_sensitivity * Calc_Mouse_Yaw(rc.mouse.x);
         }
     }
-    voltage = Yaw6020_PID(RC_YAW, imu.Yaw_Angle, imu.Yaw_Velocity, Rotate_Z);//这个是经验值
+    voltage = Yaw6020_PID(RC_YAW, imu.Yaw_Angle, imu.Yaw_Velocity, Rotate_Z);//不加前馈
     Chassis_GM6020_Tx(voltage);
 }
 
@@ -81,7 +85,9 @@ void Chassis_M3508_CMD(void)
             x = rc.LX;
             y = rc.LY;
             z = Chas_Calc_Z(GIM_CHAS_Angle);
-            Rotate_Z = z*3; //magic
+            //Rotate_Z = (Chassis_M3508_Velocity[0]+Chassis_M3508_Velocity[1]+Chassis_M3508_Velocity[2]+Chassis_M3508_Velocity[3])/200;
+            /*<< magic >>*/
+            z=z*95/chassis_rotate_level; //back //todo
         }
         else if(SW_DOWN == rc.sw2)//小陀螺模式
         {
@@ -93,7 +99,7 @@ void Chassis_M3508_CMD(void)
             x = r*cosf(chasA);
             y = r*sinf(chasA);
             z = -2.114514;
-            Rotate_Z = z/2.5; //magic
+            //Rotate_Z = (Chassis_M3508_Velocity[0]+Chassis_M3508_Velocity[1]+Chassis_M3508_Velocity[2]+Chassis_M3508_Velocity[3])/500; //magic
         }
     }
     else if(SW_DOWN == rc.sw1) //键鼠控制
@@ -109,7 +115,9 @@ void Chassis_M3508_CMD(void)
             x = xHandler(rc.kb.bit.D, rc.kb.bit.A);
             y = yHandler(rc.kb.bit.W, rc.kb.bit.S);
             z = Chas_Calc_Z(GIM_CHAS_Angle);
-            Rotate_Z = z*3; //again, magic
+            //Rotate_Z = z*3; //again, magic
+            /*<< magic >>*/
+            z=z*95/chassis_rotate_level; //back //todo
         }
         else //小陀螺
         {
@@ -120,8 +128,8 @@ void Chassis_M3508_CMD(void)
             float chasA = rcA - GIM_CHAS_Angle;
             x = r*cosf(chasA);
             y = r*sinf(chasA);
-            z = -2.114514;
-            Rotate_Z = z/2.5; //M A G I C
+            z = -2;
+            //Rotate_Z = z/2.5; //M A G I C
         }
     }
     //后续工作
@@ -146,38 +154,30 @@ void Chassis_M3508_CMD(void)
 /*
     helper functions
 */
-float yHandler(float w, float s)
-{
+float yHandler(float w, float s){
     static float y = 0;
     float newY = w-s;
-    if(0==newY)
-    {
-        if(y>0){y-=0.005;}
-        if(y<0){y+=0.005;}
+    if(0==newY){
+        if(y>0){y-=0.003;}
+        if(y<0){y+=0.003;}
         if(-0.005<y && y<0.005){y=0;}
-    }
-    else
-    {
-        y += newY/500.0f;
+    }else{
+        y += newY/1000.0f;
     }
     if(y> 1){y= 1;}
     if(y<-1){y=-1;}
     return y;
 }
 
-float xHandler(float d, float a)
-{
+float xHandler(float d, float a){
     static float x = 0;
     float newX = d-a;
-    if(0==newX)
-    {
-        if(x>0){x-=0.005;}
-        if(x<0){x+=0.005;}
+    if(0==newX){
+        if(x>0){x-=0.003;}
+        if(x<0){x+=0.003;}
         if(-0.005<x && x<0.005){x=0;}
-    }
-    else
-    {
-        x += newX/500.0f;
+    }else{
+        x += newX/1000.0f;
     }
     if(x> 1){x= 1;}
     if(x<-1){x=-1;}
@@ -186,3 +186,17 @@ float xHandler(float d, float a)
 
 
 //////////电容控制
+void Capacitor_Control(void)
+{
+    Power_Limit = Manage_Power_Limit(refe.chas_power_limit);
+    Chassis_Capacitor_Tx( Power_Limit );
+    chassis_speed_level = Reduction_Ratio*Power_Limit/3;
+    chassis_rotate_level = Reduction_Ratio*Power_Limit/4;
+}
+
+float Calc_Mouse_Yaw(int16_t x)
+{
+    static float old = 0;
+    old = x;
+    return (x+old)/2;
+}

@@ -15,6 +15,7 @@ extern "C" {
 
 /*函数声名*/
 void Gimbal_Task(void);
+void Loader_Speed_Control(void);
 
 
 

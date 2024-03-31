@@ -13,6 +13,7 @@ extern "C" {
 void Chassis_M3508_CMD(void);
 void Chassis_Yaw6020_CMD(void);
 
+void Capacitor_Control(void);
 
 #ifdef __cplusplus
 }

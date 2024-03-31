@@ -15,9 +15,10 @@ struct MotorData_T {
 } ;
 
 struct CapData_T {
-	float Vin;
-	float Vc;
-	float Iin;
+	float V_In;
+	float I_In;
+	float Power_In;
+	float Vcap;
 	float Pset;
 } ;
 

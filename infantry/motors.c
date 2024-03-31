@@ -34,7 +34,7 @@ float Shooter_Velocity[2] = {0,0};
 //can2数据：yaw电机&麦轮
 float Chassis_M3508_Velocity[4] = {0,0,0,0};
 float GIM_CHAS_Angle = 0.0f;//(-pi,pi]
-struct CapData_T Capacitor = {0,0,0,0};
+struct CapData_T Capacitor = {0,0,0,0,0};
 
 /* ------------------------------ 初始化（配置过滤器）------------------------------ */
 void Enable_Motors(void)
@@ -174,8 +174,8 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef* hcan)
 				int16_t rawVelocity = ( (RxData[2]<<8) | RxData[3] );
 				if(rawAngle>6000){rawAngle -= 8192;}
 				//赋值
-				Pitch6020.Angle = rawAngle * _pi_over_4096_ ;
-				Pitch6020.Velocity = (float)rawVelocity * _rads_per_rpm_ ;//速度直接转换为rad/s
+				Pitch6020.Angle = rawAngle * _pi_over_4096_ ; //机械限位
+				//Pitch6020.Velocity = (float)rawVelocity * _rads_per_rpm_ ;//傻逼6020速度飘的一笔 改用imu
 			}else if(RxHeader.StdId == 0x206){
 				//拨弹盘速度//不需要滤波
 				int16_t tempVelocity = ( (RxData[2]<<8) | RxData[3] );
@@ -216,12 +216,14 @@ void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef* hcan)
 				int16_t tempVelocity = ( (RxData[2]<<8) | RxData[3] );
 				Chassis_M3508_Velocity[i] = (float)tempVelocity * _rads_per_rpm_ ;
 			}else if(RxHeader.StdId == 0x211){
+				/*
 				uint16_t* captr = (uint16_t*)RxData;
-				Capacitor.Vin = (float)captr[0]/100.0f;
-				Capacitor.Vc = (float)captr[1]/100.0f;
-				Capacitor.Iin = (float)captr[2]/100.0f;
+				Capacitor.V_In = (float)captr[0]/100.0f;
+				Capacitor.Vcap = (float)captr[1]/100.0f;
+				Capacitor.I_In = (float)captr[2]/100.0f;
 				Capacitor.Pset = (float)captr[3]/100.0f;
-				HAL_GPIO_TogglePin(Blue_GPIO_Port,Blue_Pin);
+				Capacitor.Power_In = Capacitor.I_In*Capacitor.V_In;
+				*/
 			}else{
 				HAL_GPIO_WritePin(Red_GPIO_Port,Red_Pin,GPIO_PIN_SET);
 			}

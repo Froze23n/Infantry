@@ -22,9 +22,10 @@ typedef struct {
 extern Referee_Type refe;
 
 void Start_Referee_Rx(void);
+uint16_t Manage_Power_Limit(uint16_t newP);
 
-
-
+uint16_t Manage_Cooling_Value(uint16_t newC);
+uint16_t Manage_Heat_Limit(uint16_t newH);
 
 
 #ifdef __cplusplus

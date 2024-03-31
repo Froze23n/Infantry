@@ -4,8 +4,8 @@
 *                         www.segger.com                             *
 **********************************************************************
 
-File          : C:/Users/29851/Desktop/RM/Infantry_copy/OzoneProject/test.jdebug
-Created       : 26 Mar 2024 20:42
+File          : F:/META/NewGim/OzoneProject/NewGim.jdebug
+Created       : 21 Mar 2024 13:44
 Ozone Version : V3.26
 */
 
@@ -22,8 +22,8 @@ void OnProjectLoad (void) {
   //
   // Dialog-generated settings
   //
-  Project.AddPathSubstitute ("C:/Users/29851/Desktop/RM/Infantry_copy/OzoneProject", "$(ProjectDir)");
-  Project.AddPathSubstitute ("c:/users/29851/desktop/rm/infantry_copy/ozoneproject", "$(ProjectDir)");
+  Project.AddPathSubstitute ("F:/META/NewGim/OzoneProject", "$(ProjectDir)");
+  Project.AddPathSubstitute ("f:/meta/newgim/ozoneproject", "$(ProjectDir)");
   Project.SetDevice ("STM32F407IG");
   Project.SetHostIF ("USB", "");
   Project.SetTargetIF ("SWD");
@@ -33,7 +33,7 @@ void OnProjectLoad (void) {
   //
   // User settings
   //
-  File.Open ("C:/Users/29851/Desktop/RM/Infantry_copy/build/test.elf");
+  File.Open ("F:/META/NewGim/build/NewGim.elf");
 }
 
 /*********************************************************************

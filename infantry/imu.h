@@ -25,6 +25,8 @@ typedef struct
 {
     float Yaw_Velocity; //全局 云台角速度 rad/s
     float Yaw_Angle;
+    float Pitch_Velocity;
+    float Pitch_Angle;
 } IMU_Type;
 
 //原始数据

@@ -11,10 +11,10 @@
 #pragma pack()  // 按照1字节对齐
 /* ------------------------------ Type Definition ------------------------------ */
 typedef struct {
-	float LY;
-	float LX;
-	float RY;
-	float RX;
+	float LY; //[-1,1]
+	float LX; //[-1,1]
+	float RY; //[-1,1]
+	float RX; //[-1,1]
 	// ch value: -660 ~ 660
 	int16_t ch1;	
 	int16_t ch2;
@@ -69,7 +69,7 @@ extern RC_Type rc;
 extern uint32_t rc_tick;
 
 /* ------------------------------ Function Declaration (used in other .c files) ------------------------------ */
-void Dbus_Init(void);
-void Dbus_UART_IRQHandler(void);
+void Dbus_Init(void); //放在main
+void Dbus_UART_IRQHandler(void); //放在中断处理函数中
 
 #endif

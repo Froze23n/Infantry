@@ -353,12 +353,13 @@ void Get_IMU_Yaw(void)
 	-imu_raw_data.ay,
 	-imu_raw_data.az);
 	newYaw = atan2f(2.0f * (q[0] * q[3] + q[1] * q[2]), 2.0f * (q[0] * q[0] + q[1] * q[1]) - 1.0f);
-	//*pitch = asinf(-2.0f * (q[1] * q[3] - q[0] * q[2])); //暂时用不到pitch角度
+	imu.Pitch_Angle = asinf(-2.0f * (q[1] * q[3] - q[0] * q[2])); //暂时用不到pitch角度
 	if(newYaw-Old_Yaw<-PI){Circle+=1;}
 	if(newYaw-Old_Yaw> PI){Circle-=1;}
 	Old_Yaw = newYaw;//更新旧角度
 	//累计的弧度广播到全局
 	imu.Yaw_Angle = 2.0f*PI*Circle + newYaw;
 	//云台角速度广播到全局，单位：rad/s
+	imu.Pitch_Velocity = -imu_raw_data.gy;
 	imu.Yaw_Velocity = -imu_raw_data.gz; //板子躺着放，取反。
 }

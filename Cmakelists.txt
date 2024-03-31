@@ -23,8 +23,8 @@ set(CMAKE_C_STANDARD 11)
 
 # ########################## USER CONFIG SECTION ##############################
 # set up proj
-project(test C CXX ASM) # TODO
-set(CMSISDSP test) # if using DSP, modify your_dsp_path here
+project(infantry C CXX ASM) # TODO
+set(CMSISDSP infantry) # if using DSP, modify your_dsp_path here
 			                      # e.g. set(CMSISDSP Drivers/CMSIS/DSP)
 
 # ! rebuild or use command line `cmake .. -D` to switch option

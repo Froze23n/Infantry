@@ -29,8 +29,9 @@ float yaw6020_velocity_to_voltage(float expV,float truV);
 //云台pitch
 int16_t Pitch6020_PID(float pError, float truV);
 float pitch6020_velocity_to_voltage(float vError);
-//云台拨弹盘
+//云台拨弹盘,射击
 int16_t Loader_M2006_PID(float pError);
+int16_t Shooter_PID(float pError, int8_t ID);
 
 
 #ifdef __cplusplus
