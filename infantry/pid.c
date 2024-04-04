@@ -123,7 +123,7 @@ int16_t Pitch6020_PID(float pError, float truV)
 #define PITCH_V2V_I_LIMIT (0.314)
 float pitch6020_velocity_to_voltage(float vError)
 {
-    if(vError>0){vError*=3;} //该死的重力补偿
+    if(vError>0){vError*=3;} //这是故意的，为的是重力补偿。云台后重前轻
     static float iError = 0;
     float output;
     iError += vError;
