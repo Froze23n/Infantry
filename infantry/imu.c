@@ -337,7 +337,7 @@ void MahonyAHRSupdateIMU(float q[4], float gx, float gy, float gz, float ax, flo
 	q[3] *= recipNorm;
 }
 
-void Get_IMU_Yaw(void)
+void Get_IMU_Data(void)
 {
 	static float q[4]={1.0f , 0.0f , 0.0f , 0.0f};  // 四元数
 	static float Old_Yaw = 0;
@@ -353,7 +353,7 @@ void Get_IMU_Yaw(void)
 	-imu_raw_data.ay,
 	-imu_raw_data.az);
 	newYaw = atan2f(2.0f * (q[0] * q[3] + q[1] * q[2]), 2.0f * (q[0] * q[0] + q[1] * q[1]) - 1.0f);
-	imu.Pitch_Angle = asinf(-2.0f * (q[1] * q[3] - q[0] * q[2])); //暂时用不到pitch角度
+	imu.Pitch_Angle = asinf(-2.0f * (q[1] * q[3] - q[0] * q[2]));
 	if(newYaw-Old_Yaw<-PI){Circle+=1;}
 	if(newYaw-Old_Yaw> PI){Circle-=1;}
 	Old_Yaw = newYaw;//更新旧角度
