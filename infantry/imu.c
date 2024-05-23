@@ -30,7 +30,7 @@ uint8_t BMI088_Acc_Init(void);
 //微秒延时
 void bmi_delay_us(uint16_t us);
 
-uint8_t BMI088_Init(void)
+uint8_t IMU_Init(void)
 {
 	uint8_t state = BMI088_NO_ERROR;
 	state |= BMI088_Gyro_Init();
@@ -337,7 +337,7 @@ void MahonyAHRSupdateIMU(float q[4], float gx, float gy, float gz, float ax, flo
 	q[3] *= recipNorm;
 }
 
-void Get_IMU_Data(void)
+void IMU_Task(void)
 {
 	static float q[4]={1.0f , 0.0f , 0.0f , 0.0f};  // 四元数
 	static float Old_Yaw = 0;

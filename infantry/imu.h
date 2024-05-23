@@ -68,8 +68,8 @@ typedef enum {
 /* ------------------------------ Extern Global Variable ------------------------------ */
 extern IMU_Type imu;
 /* ------------------------------ Function Declaration (used in other .c files) ------------------------------ */
-uint8_t BMI088_Init(void);
-void Get_IMU_Data(void);
+uint8_t IMU_Init(void);
+void IMU_Task(void);
 
 /* ------------------------------ Macro Definition ------------------------------ */
 //下面全是关于寄存器地址以及其中的相关数值的宏定义

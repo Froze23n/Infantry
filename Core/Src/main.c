@@ -147,7 +147,7 @@ int main(void)
   Start_Referee_Rx();
   MCU_Beep_Up(); Laser_OFF();
   Dbus_Init(); HAL_Delay(1000);
-  BMI088_Init(); Enable_Motors();
+  IMU_Init(); Enable_Motors();
   while (1)
   {
     HAL_Delay(20);
